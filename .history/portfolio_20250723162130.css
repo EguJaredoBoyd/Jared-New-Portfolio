@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+
+}
+html{
+    scroll-behavior: smooth;
+    background-color: black;
+    color: white;
+}
+body{
+    max-width: 100%;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1rem;
+}
+header ul li a{
+    color: gray;
+    text-decoration: none;
+}
+.intro h1{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 5rem;
+    font-size: 50px;
+}
+.intro p{
+    text-align: center;
+    margin: 1.5rem 0;
+    
+}
+main img{
+    max-width: 100%;
+}
+.jared-headshot img{
+    opacity: 0.8;
+    border-radius: 50%;
+}
+.about-jared{
+    margin: 2rem 0;
+    padding: 1rem;
+}
+.about-jared h3{
+    font-size: 30px;
+    margin: 1rem 0;
+}
+.about-jared hr{
+    max-width: 60%;
+    margin-bottom: 1.5rem;
+}
+.about-jared p{
+    color: gray;
+    line-height: 2rem;
+    border: 1px;
+}
+.skill-section h3{
+    font-size: 30px;
+    margin: 1rem 0;
+}
+.skill-section #html, #css, #javascript, #react{
+    display: block;
+    margin: 0.5rem 0 1.5rem; 
+}
+.skill-section progress::-webkit-progress-bar ::-webkit-progress-value{
+    width: 80%;
+    height: 30px;
+    accent-color: gray;
+    background-color: white;
+}
+.projects-view{
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.projects-view .view{
+    padding: 15px 0;
+}
+.projects-view p{
+    margin: 0.5rem 0;
+}

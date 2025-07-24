@@ -156,14 +156,7 @@ footer hr{
 }
 .form-section button{
     width: 60%;
-    padding: 0.7rem;
-    font-size: 15px;
+    padding: 1rem;
+    font-size: 17px;
     text-transform: uppercase;
-    margin-bottom: 10rem;
-}
-.socials a{
-    text-decoration: none;
-    color: gray;
-    font-size: 30px;
-    margin: 5px;
 }

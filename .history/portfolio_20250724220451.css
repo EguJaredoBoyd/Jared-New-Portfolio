@@ -161,9 +161,6 @@ footer hr{
     text-transform: uppercase;
     margin-bottom: 10rem;
 }
-.socials a{
+.socials{
     text-decoration: none;
-    color: gray;
-    font-size: 30px;
-    margin: 5px;
 }
