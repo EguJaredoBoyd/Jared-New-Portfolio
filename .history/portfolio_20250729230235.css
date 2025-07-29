@@ -168,7 +168,7 @@ footer hr{
     margin-right: auto;
 }
 .form-section form input, textarea[placeholder]{
-    font-size: 20px;
+    font-size: 15px;
 }
 button{
     appearance: none;
@@ -179,8 +179,6 @@ button{
     font-size: 15px;
     text-transform: uppercase;
     margin-bottom: 10rem;
-    background-color: white;
-    color: black;
 }
 .socials a{
     text-decoration: none;

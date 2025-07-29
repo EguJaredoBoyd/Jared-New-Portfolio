@@ -179,8 +179,7 @@ button{
     font-size: 15px;
     text-transform: uppercase;
     margin-bottom: 10rem;
-    background-color: white;
-    color: black;
+    color: red;
 }
 .socials a{
     text-decoration: none;
