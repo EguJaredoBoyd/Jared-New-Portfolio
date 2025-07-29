@@ -17,7 +17,7 @@ body{
 header ul{
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
     padding: 1rem;
 }
@@ -57,7 +57,6 @@ main img{
 .about-jared p{
     color: gray;
     line-height: 2rem;
-    text-align: justify;
 }
 .skill-section h3{
     font-size: 30px;
@@ -67,19 +66,11 @@ main img{
     display: block;
     margin: 0.5rem 0 1.5rem; 
 }
-progress{
-    appearance: none;
-    width: 100%;
-    height: 2rem;
-}
-progress::-webkit-progress-bar{
+.skill-section progress::-webkit-progress-bar ::-webkit-progress-value{
+    width: 80%;
+    height: 30px;
+    accent-color: gray;
     background-color: white;
-}
-progress::-webkit-progress-value{
-    background-color: rgb(70, 70, 70);
-}
-progress::-moz-progress-bar{
-    background-color: rgb(70, 70, 70);
 }
 .projects-view{
     background-color: white;
@@ -104,7 +95,6 @@ progress::-moz-progress-bar{
     background-color: white;
     padding: 1rem 1.5rem;
     color: black;
-
 }
 .my-price h3{
    font-size: 30px;
@@ -113,7 +103,6 @@ progress::-moz-progress-bar{
 .my-price p{
     line-height: 2rem;
     color: gray;
-    text-align: justify;
 }
 .project-visuals h3{
     font-size: 30px;
@@ -160,15 +149,12 @@ footer hr{
 }
 .form-section form input, textarea{
     max-width: 100%;
-    width: 95%;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
     padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 10px;
-    margin-right: auto;
-}
-button{
-    appearance: none;
 }
 .form-section button{
     width: 60%;

@@ -67,19 +67,16 @@ main img{
     display: block;
     margin: 0.5rem 0 1.5rem; 
 }
-progress{
-    appearance: none;
-    width: 100%;
-    height: 2rem;
-}
-progress::-webkit-progress-bar{
+.skill-section progress{
+    width: 80%;
+    height: 30px;
+    accent-color: gray;
     background-color: white;
 }
-progress::-webkit-progress-value{
-    background-color: rgb(70, 70, 70);
-}
-progress::-moz-progress-bar{
-    background-color: rgb(70, 70, 70);
+progress[value]{
+    background-color: red;
+    height: 100px;
+    accent-color: yellow;
 }
 .projects-view{
     background-color: white;
@@ -103,8 +100,7 @@ progress::-moz-progress-bar{
     text-decoration: none;
     background-color: white;
     padding: 1rem 1.5rem;
-    color: black;
-
+    accent-color: red;
 }
 .my-price h3{
    font-size: 30px;
@@ -166,9 +162,6 @@ footer hr{
     padding-left: 10px;
     margin-bottom: 10px;
     margin-right: auto;
-}
-button{
-    appearance: none;
 }
 .form-section button{
     width: 60%;

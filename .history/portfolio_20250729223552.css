@@ -76,10 +76,10 @@ progress::-webkit-progress-bar{
     background-color: white;
 }
 progress::-webkit-progress-value{
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(71, 70, 70);
 }
 progress::-moz-progress-bar{
-    background-color: rgb(70, 70, 70);
+    background-color: gray;
 }
 .projects-view{
     background-color: white;

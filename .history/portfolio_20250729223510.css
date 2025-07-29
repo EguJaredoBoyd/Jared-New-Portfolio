@@ -70,16 +70,16 @@ main img{
 progress{
     appearance: none;
     width: 100%;
-    height: 2rem;
+    height: 1.5rem;
 }
 progress::-webkit-progress-bar{
     background-color: white;
 }
 progress::-webkit-progress-value{
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(31, 30, 30);
 }
 progress::-moz-progress-bar{
-    background-color: rgb(70, 70, 70);
+    background-color: gray;
 }
 .projects-view{
     background-color: white;
