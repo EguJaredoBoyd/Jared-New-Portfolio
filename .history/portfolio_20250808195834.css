@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+
+}
+html{
+    scroll-behavior: smooth;
+    background-color: black;
+    color: white;
+}
+body{
+    max-width: 100%;
+    padding: 20px;
+}
+.side-bar{
+    grid-area: side-bar;
+}
+.side-bar ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 1s ease-in;
+}
+.side-bar ul li a{
+    color: gray;
+    text-decoration: none;
+}
+
+button{
+    background: none;
+    border: none;
+    color: gray;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#menu-button{
+    margin-bottom: 0.5rem;
+}
+
+.show{
+    visibility: hidden;
+    transform: translateY(-10px);
+}
+main{
+    grid-area: main;
+}
+.intro h1{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 5rem;
+    font-size: 50px;
+}
+.intro p{
+    text-align: center;
+    margin: 1.5rem 0;
+    
+}
+main img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.jared-headshot img{
+    opacity: 0.8;
+    border-radius: 50%;
+}
+.about-jared h3{
+    font-size: 30px;
+    margin: 3rem 0 1rem;
+
+}
+.about-jared hr{
+    max-width: 60%;
+    margin-bottom: 1.5rem;
+}
+.about-jared p{
+    color: gray;
+    line-height: 2rem;
+    text-align: justify;
+}
+.skill-section h3{
+    font-size: 30px;
+    margin: 3rem 0 1rem;
+}
+.skill-section #html, #css, #javascript, #react{
+    display: block;
+    margin: 0.5rem 0 1.5rem; 
+}
+progress{
+    appearance: none;
+    width: 100%;
+    height: 2rem;
+}
+progress::-webkit-progress-bar{
+    background-color: white;
+}
+progress::-webkit-progress-value{
+    background-color: rgb(70, 70, 70);
+}
+progress::-moz-progress-bar{
+    background-color: rgb(70, 70, 70);
+}
+.projects-view{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+.projects-view .view{
+    padding: 20px 0;
+}
+.projects-view p{
+    margin: 0.7rem 0;
+}
+.projects-view .projects{
+    font-size: small;
+}
+.download-file{
+    margin-top: 3rem;
+}
+.download-file a{
+    text-decoration: none;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    color: black;
+
+}
+.my-price h3{
+   font-size: 30px;
+   margin: 3rem 0 1rem; 
+}
+.my-price p{
+    line-height: 2rem;
+    color: gray;
+    text-align: justify;
+}
+.project-visuals h3{
+    font-size: 30px;
+    margin: 3rem 0 1rem;
+}
+.project-visuals hr{
+    max-width: 60%;
+    margin-bottom: 2rem;
+}
+.project-image{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+footer{
+    grid-area: footer;
+}
+footer h3{
+    font-size: 30px;
+    margin: 3rem 0 1rem;
+}
+footer hr{
+    max-width: 60%;
+}
+.contact-jared{
+    margin: 2rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-jared i{
+    font-size: 40px;
+}
+.contact-jared a{
+    color: gray;
+}
+.contact-span{
+    padding-left: 20px;
+    color: gray;
+}
+.form-section h5{
+    color: gray;
+    margin-bottom: 1rem;
+}
+.form-section form{
+    max-width: 100%;
+}
+.form-section form input, textarea{
+    max-width: 100%;
+    width: 95%;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+}
+.form-section form input, textarea[placeholder]{
+    font-size: 20px;
+}
+button{
+    appearance: none;
+}
+.form-section button{
+    width: 60%;
+    padding: 0.7rem;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    background-color: white;
+    color: black;
+    border: none;
+}
+.socials a{
+    text-decoration: none;
+    color: gray;
+    font-size: 30px;
+    margin: 5px;
+}
+
+@media screen and (min-width: 1000px){
+    body{
+        display: grid;
+        grid-template-areas: 
+        'side-bar side-bar main main main main'
+        'side-bar side-bar footer footer footer footer';
+
+
+    }
+
+    #menu-button{
+        display: none;
+    }
+    .side-bar{
+        background-color: blue;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+    }
+    .side-bar ul{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 2rem;
+        background-color: pink;
+
+    }
+    .side-bar nav::before {
+        content: "";
+        display: block;
+        background-image: url("./images/jared-headshot-removebg-preview.png");
+        width: 100px;
+        height: 150px;
+        display: block;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin:auto;
+}
+
+    .home::before{
+        content: "\ee1C";
+        font-family: 'remix icon';
+        display: block;
+        text-align: center;
+        background-color: black;
+        padding: 1rem 0;
+    }
+    main, footer{
+        margin-left: 6.5rem;
+        padding: 0 6rem 0 7.5rem;
+    }
+    .show{
+        visibility: visible;
+        display: block;
+    }
+    main{
+        background-color: red;
+    }
+    .projects-view{
+        display: flex;
+        justify-content: space-around;
+    }
+    footer{
+        background-color: green;
+    }
+    .form-section h5{
+        font-size: 1rem;
+    }
+    .form-section form input, textarea{
+        border-radius: 0;
+    }
+    .form-section button{
+        width: 20%;
+    }
+
+    
+}

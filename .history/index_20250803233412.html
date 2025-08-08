@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./portfolio.css">
+    <script src="./portfolio.js" defer></script>
+    <title>Jared Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu-button" onclick="toggleMenu()">Menu</button>
+            <ul id="menu-content" class="show">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#project-visuals">Photos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <div class="intro" id="home">
+            <h1>Egu Chidiebere Jared.</h1>
+            <p>Frontend Web Developer | HTML & CSS Specialist | Learning React.</p>
+        </div>
+        <div class="jared-headshot">
+            <img src="./images/jared-headshot-removebg-preview.png" alt="A Headshot Image of Jared">
+        </div>
+        <div class="about-jared" id="about">
+            <h3>About Me</h3>
+            <hr>
+            <p>
+                I'm a passionate frontend developer who loves building responsive, clean, and accessible websites using HTML, CSS, and JavaScript. Currently expanding my skills in React.js and modern web development practices. My journey into web development began from a deep interest in visual creativity and solving problems on the web. With a focus on writing semantic HTML and crafting modern user interfaces using CSS, I bring life to designs and ensure a great user experience. I enjoy collaborating with other developers, constantly learning, and using code to build solutions that work across all devices.
+            </p>
+        </div>
+        <div class="skill-section">
+            <h3>My Skills</h3>
+            <div>
+                <label for="html">HTML</label>
+                <progress id="html" value="80" max="100"></progress>
+            </div>
+            <div>
+                <label for="css">CSS</label>
+                <progress id="css" value="70" max="100"></progress>
+            </div>
+            <div>
+                <label for="javascript">JavaScript</label>
+                <progress id="javascript" value="50" max="100"></progress>
+            </div>
+            <div>
+                <label for="react">React</label>
+                <progress id="react" value="50" max="100"></progress>
+            </div>
+        </div>
+        <div class="projects-view">
+            <div class="view">
+                <p>80 +</p>
+                <p class="projects">Classes Attended</p>
+            </div>
+            <div class="view">
+                <p>25 +</p>
+                <p class="projects">Projects Done</p>
+            </div>
+            <div class="view">
+                <p>5 +</p>
+                <p class="projects">Certificates Received</p>
+            </div>
+            <div class="view">
+                <p>14 +</p>
+                <p class="projects">Happy Clients</p>
+            </div>
+        </div>
+        <div class="download-file">
+            <a href="./files/Jared-Resume.docx" download="Jared Resume"><i class="ri-download-fill"></i>    Download Resume</a>
+        </div>
+        <div class="my-price">
+            <h3>My Price</h3>
+            <p>This will be based on the type and the style of site or the service. However, it will remain negotiable.</p>
+        </div>
+        <div class="project-visuals" id="project-visuals">
+            <h3>My Projects</h3>
+            <hr>
+            <div class="project-image">
+                <img src="./images/Screenshot-Terra .jpg" alt="A picture of a client's e-commerce website">
+                <img src="./images/Screenshot-Temple.jpg" alt=" A picture of the LDS temples">
+                <img src="./images/Screenshot-Terra .jpg" alt="An e-commerce website of a company">
+            </div>
+            
+        </div>
+    </main>
+
+    <footer id="contact">
+        <h3>Contact Me</h3>
+        <hr>
+        <div class="contact-jared">
+            <div>
+                <p>
+                    <i class="ri-map-pin-2-line"></i>
+                    <span class="contact-span">Abia, Nigeria</span>  
+                </p>
+            </div>
+            <div>
+                <p>
+                    <i class="ri-phone-line"></i>
+                    <span class="contact-span">Phone: +234-703-926-9385</span>   
+                </p>
+            </div>
+            <div>
+                <p>
+                    <i class="ri-mail-ai-line"></i>
+                    <span class="contact-span">Email: <a href="mailto:eguchidieberejared@gmail.com">eguchidieberejared@gmail.com</a></span>   
+                </p>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h5>Let's get in touch. Send me a message:</h5>
+            <form action="https://formspree.io/f/xvgqkrlp" method="post" target="_blank">
+                <input type="text" placeholder="Name" id="name"> <br>
+                <input type="email" placeholder="Email" id="email"> <br>
+                <input type="text" placeholder="Subject" id="subject"> <br>
+                <textarea name="message" id="text-area" placeholder="Message" style="padding-top: 20px;"></textarea> <br>
+                <button type="submit">
+                    <i class="ri-send-plane-line"></i>
+                    <span class="send-message"> Send Message</span>  
+                </button>
+            </form>
+            <div class="socials">
+                <a href="https://www.facebook.com/share/1FsooXF57Q/?mibextid=wwXIfr"><i class="ri-facebook-circle-line"></i></a>
+                <a href="https://www.instagram.com/egujaredoboyd?igsh=MTEwM20zMnZlMnlhNQ%3D%3D&utm_source=qr"><i class="ri-instagram-line"></i></a>
+                <a href="https://x.com/eguboyd?s=11"><i class="ri-twitter-x-line"></i></a>
+                <a href="https://wa.me/+2347039269385"><i class="ri-whatsapp-line"></i></a>
+                <a href="https://github.com/EguJaredoBoyd"><i class="ri-github-line"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
