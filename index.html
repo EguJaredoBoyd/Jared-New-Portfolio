@@ -3,15 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <!-- Primary SEO -->
+    <title>Jared | Frontend Web Developer — Portfolio</title>
+    <meta name="description" content="Egu Chidiebere Jared — frontend web developer from Abia, Nigeria. Portfolio with responsive HTML/CSS/JS projects; learning React.">
+    <meta name="keywords" content="Egu Chidiebere Jared, Jared, frontend developer, web developer, HTML, CSS, JavaScript, portfolio,  Nigeria">
+    <meta name="author" content="Egu Chidiebere Jared">
+    <link rel="canonical" href="https://jared-new-portfolio.vercel.app/">
+    <!-- Social (Open Grapgh and twitter) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Jared Portfolio">
+    <meta property="og:title" content="Jared | Frontend Web Developer — Portfolio">
+    <meta property="og:description" content="Egu Chidiebere Jared — frontend web developer. See projects, skills, and easy contact.">
+    <meta property="og:url" content="https://jared-new-portfolio.vercel.app/">
+    <meta property="og:image" content="https://jared-new-portfolio.vercel.app/images/jared-resize.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jared | Frontend Web Developer">
+    <meta name="twitter:description" content="Egu Chidiebere jared — frontend web developer. Explore my projects and contact me.">
+    <meta name="twitter:image" content="https://jared-new-portfolio.vercel.app/images/jared-resize.jpg">
+
+    <!-- Google Verification Placeeholder -->
+    <meta name="google-site-verification" content="UCqm14N1_2NpVBxSdiBVzeeS0F6rDo0kpo9Dhxy7KtI" />
+
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="./images/code-favicon.png" type="image/x-icon">
+
+    <!-- Normal assets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./portfolio.css">
     <script src="./portfolio.js" defer></script>
-    <title>Jared Portfolio</title>
+
+    <!-- Structured data (JSON-LD) for Person (Egu Chidiebere Jared)-->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Egu Chidiebere Jared",
+            "url": "https://jared-new-portfolio.vercel.app/",
+            "sameAs": [
+                "https://github.com/yourusername",
+                "https://linkedin.com/in/yourusername"
+            ],
+            "jobTitle": "Frontend Developer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Freelance"
+            }
+        }
+    </script>
+
+    
 </head>
 <body>
     <div class="side-bar">
@@ -133,9 +176,9 @@
         <div class="form-section">
             <h5>Let's get in touch. Send me a message:</h5>
             <form action="https://formspree.io/f/xvgqkrlp" method="post" target="_blank">
-                <input type="text" placeholder="Name" id="name"> <br>
-                <input type="email" placeholder="Email" id="email"> <br>
-                <input type="text" placeholder="Subject" id="subject"> <br>
+                <input type="text" name="name" placeholder="Name" id="name"> <br>
+                <input type="email" name="email" placeholder="Email" id="email"> <br>
+                <input type="text" name="subject" placeholder="Subject" id="subject"> <br>
                 <textarea name="message" id="text-area" placeholder="Message" style="padding-top: 20px;"></textarea> <br>
                 <button type="submit">
                     <i class="ri-send-plane-line"></i>
