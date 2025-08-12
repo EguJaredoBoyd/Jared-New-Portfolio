@@ -260,18 +260,8 @@ button{
         background-repeat: no-repeat;
         margin:auto;
     }
-    .side-bar ul li{
-        width: 100%;
-        text-align: center;
-    }
     .side-bar ul li a{
         color: white;
-        transition: background-color 0.5s ease-in;
-    }
-    .side-bar ul li a:hover{
-        background-color: black;
-        padding: 0.5rem;
-        border-radius: 50px;
     }
 
     .home::before{
@@ -281,6 +271,10 @@ button{
         display: block;
         text-align: center;
         padding: 1rem 0;
+    }
+    .home:hover{
+        transform: scale(1);
+        background-color: whitesmoke;
     }
     .about::before{
         content: "\f264";

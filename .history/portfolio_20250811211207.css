@@ -263,15 +263,11 @@ button{
     .side-bar ul li{
         width: 100%;
         text-align: center;
+        background-color: blue;
     }
     .side-bar ul li a{
         color: white;
-        transition: background-color 0.5s ease-in;
-    }
-    .side-bar ul li a:hover{
-        background-color: black;
-        padding: 0.5rem;
-        border-radius: 50px;
+        display: flex;
     }
 
     .home::before{

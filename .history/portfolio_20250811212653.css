@@ -266,7 +266,7 @@ button{
     }
     .side-bar ul li a{
         color: white;
-        transition: background-color 0.5s ease-in;
+        transition: background-color 0.9s ease-in-out;
     }
     .side-bar ul li a:hover{
         background-color: black;

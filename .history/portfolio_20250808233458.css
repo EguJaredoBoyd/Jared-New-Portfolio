@@ -251,7 +251,6 @@ button{
         content: "";
         display: block;
         background-image: url("./images/jared-headshot-removebg-preview.png");
-        opacity: 0.7;
         width: 100px;
         height: 150px;
         display: block;
@@ -260,18 +259,11 @@ button{
         background-repeat: no-repeat;
         margin:auto;
     }
-    .side-bar ul li{
-        width: 100%;
-        text-align: center;
+    .side-bar nav:hover::before{
+        background-color: blue;
     }
     .side-bar ul li a{
         color: white;
-        transition: background-color 0.5s ease-in;
-    }
-    .side-bar ul li a:hover{
-        background-color: black;
-        padding: 0.5rem;
-        border-radius: 50px;
     }
 
     .home::before{
